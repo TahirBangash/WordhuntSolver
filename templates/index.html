@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+  <body>
+    <div id="title">WORDHUNT SOLVER</div>
+    <div class="container">
+      {% if errors %}
+      <p>{{ errors }}</p>
+      {% endif %}
+      <p>Enter your 16 letters unspaced:</p>
+      <div class= "input_container">
+        <form method="post" action="." >
+          <div class="parent">
+              <div>
+                  <p>"Enter the letters from the wordhunt grid into the corrosponding spaces"</p>
+              </div>
+              <div>
+                  <div class= "parent">
+                      <p><input type="text" name="a" maxlength="1" /></p>
+                      <p><input type="text" name="b" maxlength="1" /></p>
+                      <p><input type="text" name="c" maxlength="1" /></p>
+                      <p><input type="text" name="d" maxlength="1" /></p>
+                  </div>
+                  <div class= "parent">
+                      <p><input type="text" name="e" maxlength="1" /></p>
+                      <p><input type="text" name="f" maxlength="1" /></p>
+                      <p><input type="text" name="g" maxlength="1" /></p>
+                      <p><input type="text" name="h" maxlength="1" /></p>
+                  </div>
+                  <div class= "parent">
+                      <p><input type="text" name="i" maxlength="1" /></p>
+                      <p><input type="text" name="j" maxlength="1" /></p>
+                      <p><input type="text" name="k" maxlength="1" /></p>
+                      <p><input type="text" name="l" maxlength="1" /></p>
+                  </div>
+                  <div class= "parent">
+                      <p><input type="text" name="m" maxlength="1" /></p>
+                      <p><input type="text" name="n" maxlength="1" /></p>
+                      <p><input type="text" name="o" maxlength="1" /></p>
+                      <p><input type="text" name="p" maxlength="1" /></p>
+                  </div>
+              </div>
+              <div>
+                  <p>"Enter the letters from the wordhunt grid into the corrosponding spaces"</p>
+              </div>
+          </div>
+          <p><input type="submit" value="GO" /></p>
+
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
